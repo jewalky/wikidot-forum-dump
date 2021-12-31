@@ -31,7 +31,7 @@ dump/
 
 Example of a group+categories record (from SCP-EN):
 ```json
-{
+  {
     "title": "Site Announcements and Proposals",
     "description": "Announce new pages, suggest policy, and interact with new site members.",
     "categories": [
