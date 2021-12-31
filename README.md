@@ -2,9 +2,9 @@
 
 Script is partially based on 2stacks by bluesoul: https://github.com/scuttle/2stacks
 
-To dump a Wiki's forum, edit `config.py` and put the required Wiki name (default -- `scp-wiki`, which is the SCP EN community).
+To dump a Wiki's forum, edit `config.py` and put the required Wiki name (default — `scp-wiki`, which is the SCP EN community).
 
-If your forum is too large, you may edit `threads` parameter in `config.py`, however make sure you don't overload Wikidot with requests -- no one knows what that may result in.
+If your forum is too large, you may edit `threads` parameter in `config.py`, however make sure you don't overload Wikidot with requests — no one knows what that may result in.
 
 Then make sure you have the following Python packages:
 
@@ -14,7 +14,7 @@ beautifulsoup4
 
 Run `python .` to start dumping.
 
-Note: incremental dump (i.e. updating existing categories or threads) is not supported.
+**Note:** incremental dump (i.e. updating existing categories or threads) is not supported.
 
 However, if the process is interrupted at any point, it can be seamlessly resumed per-category and per-thread.
 
@@ -60,6 +60,7 @@ Example of a group+categories record (from SCP-EN):
 ```
 
 Example of a thread record (also from SCP-EN):
+
 ```json
 {
   "breadcrumbs": [
@@ -139,4 +140,6 @@ Example of a thread record (also from SCP-EN):
 }
 ```
 
+**Note**: contrarily to what it says, `base_page_id` is not an ID, but a slug (e.g. `scp-173`).
 
+This exists only for page discussion threads.
