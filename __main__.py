@@ -2,7 +2,6 @@ import logger
 import sys
 import config
 import json
-from xmlrpc.client import ServerProxy
 import logging
 import codecs
 import re
